@@ -1,0 +1,37 @@
+Function Main
+    Declare Integer temp
+    Declare Integer j
+    Declare Integer i
+    Declare Integer Array bil[64]
+    
+    ... disediakan variabel "bilangan" dengan type array dengan panjang 64
+    Declare Integer n
+    
+    ... n = panjang dari array
+    Input n
+    For i = 0 to n-1
+        
+        ... input element / mengisikan angka yang akan diurutkan
+        Input bil[i]
+    End
+    
+    ... menuju proses insertion sort
+    For i = 1 to n-1
+        Assign j = i
+        While j>0 && ( bil[j-1] > bil[j] )
+            
+            ... swap / penukaran element
+            Assign temp = bil[j]
+            Assign bil[j] = bil[j-1]
+            Assign bil[j-1] = temp
+            Assign j = j-1
+        End
+    End
+    For i = 0 to n-1
+        
+        ... mencetak angka yang telah diurutkan
+        Output bil[i]
+    End
+    
+    ... bilangan telah diurutkan dan prosespun berhenti
+End
