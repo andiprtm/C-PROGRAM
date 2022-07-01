@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1656643804 source:c:\users\andi divangga\documents\program c\queueprojectsingle\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
